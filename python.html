@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codology</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai-sublime.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="navbar__container">
+        <div class="navbar__left__part">
+            <img src="https://i.ibb.co/tD1HX10/coding-1.png" alt="binary-code" height="40px">
+        </div>
+        <div class="navbar__right__part">   
+            <a class="navlink" href="/">Home</a>
+            <a class="navlink"  href="./java.html">Java</a>
+            <a class="navlink"  href="./python.html">Python</a>
+            <a class="navlink"  href="./cpp.html" >C++</a>
+            <a class="navlink"  href="./javascript.html" >JavaScript</a>
+        </div>
+    </div>
+    <div class="landing__container">
+        <div class="lang__wrapper">
+            <h1>Python Programming Cheatsheet</h1>
+        <div class="chatbot">
+            <p> ⚡ Seeking answers or feeling uncertain? Unlock insights with our expert chatbot – your friendly companion for all inquiries! ⚡ </p>
+            <div>
+                <button class="btn" id="start-btn"><a href="https://mediafiles.botpress.cloud/8d22acec-77a2-4a6d-a2a2-124a5ae940d8/webchat/bot.html" target="_blank">GO TO BOT 🤖</a></button>
+            </div>
+        </div>
+        <h2>Module 1 : Basics</h2>
+        <pre><code class="language-python">
+            # Hello World
+            print("Hello, World!")
+
+            # Variables and Data Types
+            age = 25
+            salary = 50000.0
+            grade = 'A'
+            is_student = True
+            name = "John"
+
+            # Operators
+            result = 10 + 5
+            is_equal = (result == 15)
+
+            # Control Flow
+            if condition:
+                # code
+            elif another_condition:
+                # code
+            else:
+                # code
+
+            switcher = {
+                1: "one",
+                2: "two"
+            }
+            result = switcher.get(value, "default")
+
+            for i in range(5):
+                # code
+
+            while condition:
+                # code
+
+            while condition:
+                # code
+            else:
+                # code
+        </code></pre>       
+        <h2>Module 2 : Object-Oriented Programming (OOP)</h2>
+        <pre><code class="language-python">
+            # Classes and Objects
+            class MyClass:
+                data = None
+                def my_method(self):
+                    # code
+            obj = MyClass()
+            obj.data = 10
+            obj.my_method()
+            
+            # Constructors
+            class Person:
+                def __init__(self, n):
+                    self.name = n
+            person = Person("Alice")
+            
+            # Inheritance and Polymorphism
+            class ChildClass(ParentClass):
+                def method(self):
+                    # code
+            obj = ChildClass()
+            
+            # Interfaces (Abstract Base Classes)
+            from abc import ABC, abstractmethod
+            class MyInterface(ABC):
+                @abstractmethod
+                def interface_method(self):
+                    pass
+            class MyClass(MyInterface):
+                def interface_method(self):
+                    # code
+            
+            # Exception Handling
+            try:
+                # code that may raise exception
+            except ExceptionType as e:
+                # handle exception
+            finally:
+                # code that runs regardless of exception            
+        </code></pre>       
+        <h2>Module 3 : Lists and Strings</h2>
+        <pre><code class="language-python">
+            # Lists
+            numbers = [1, 2, 3, 4, 5]
+            second_number = numbers[1]
+
+            # Strings
+            text = "Hello"
+            length = len(text)
+            char_at_2 = text[2]
+            substring = text[1:4]
+            combined = "Hello" + " " + "World"
+        </code></pre>       
+        <h2>Module 4 : File I/O</h2>
+        <pre><code class="language-python">
+            # Reading from File
+            with open("file.txt", "r") as file:
+                for line in file:
+                    print(line)
+            
+            # Writing to File
+            with open("output.txt", "w") as output_file:
+                output_file.write("Hello, World!")            
+        </code></pre>      
+        </div>
+         
+    </div>
+    <footer>
+        <div class="footer-content">
+          <div class="company-info">
+            <h2>Codology</h2>
+            <p>Your Path to Programming Excellence</p>
+            <p>Get in touch</p>
+            <a href="mailto:shetyenupoor10@gmail.com">support@codology.com</a>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a  href="./java.html" >Java</a></li>
+              <li><a href="./python.html" >Python</a></li>
+              <li><a  href="./cpp.html" >C++</a></li>
+              <li><a  href="./javascript.html" >JavaScript</a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>

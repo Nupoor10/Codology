@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codology</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai-sublime.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="navbar__container">
+        <div class="navbar__left__part">
+            <img src="https://i.ibb.co/tD1HX10/coding-1.png" alt="binary-code" height="40px">
+        </div>
+        <div class="navbar__right__part">   
+            <a class="navlink" href="/">Home</a>
+            <a class="navlink"  href="./java.html">Java</a>
+            <a class="navlink"  href="./python.html">Python</a>
+            <a class="navlink"  href="./cpp.html">C++</a>
+            <a class="navlink"  href="./javascript.html">JavaScript</a>
+        </div>
+    </div>
+    <div class="landing__container">
+        <div class="lang__wrapper">
+            <h1>C++ Programming Cheatsheet</h1>
+        <div class="chatbot">
+            <p> ⚡ Seeking answers or feeling uncertain? Unlock insights with our expert chatbot – your friendly companion for all inquiries! ⚡ </p>
+            <div>
+                <button class="btn" id="start-btn"><a href="https://mediafiles.botpress.cloud/aa7ed315-7b4f-4953-add0-49b72f131774/webchat/bot.html" target="_blank">GO TO BOT 🤖</a></button>
+            </div>
+        </div>
+        <h2>Module 1 : Basics</h2>
+        <pre><code class="language-cpp">
+            // Hello World
+            #include <iostream>
+            int main() {
+                std::cout << "Hello, World!" << std::endl;
+                return 0;
+            }
+
+            // Variables and Data Types
+            int age = 25;
+            double salary = 50000.0;
+            char grade = 'A';
+            bool isStudent = true;
+            std::string name = "John";
+
+            // Operators
+            int result = 10 + 5;
+            bool isEqual = (result == 15);
+
+            // Control Flow
+            if (condition) {
+                // code
+            } else if (anotherCondition) {
+                // code
+            } else {
+                // code
+            }
+
+            switch (value) {
+                case 1:
+                    // code
+                    break;
+                case 2:
+                    // code
+                    break;
+                default:
+                    // code
+            }
+
+            for (int i = 0; i < 5; i++) {
+                // code
+            }
+
+            while (condition) {
+                // code
+            }
+
+            do {
+                // code
+            } while (condition);
+        </code></pre>       
+        <h2>Module 2 : Object-Oriented Programming (OOP)</h2>
+        <pre><code class="language-cpp">
+            // Classes and Objects
+            class MyClass {
+            public:
+                int data;
+                void myMethod() {
+                    // code
+                }
+            };
+            MyClass obj;
+            obj.data = 10;
+            obj.myMethod();
+            
+            // Constructors and Destructors
+            class Person {
+            public:
+                std::string name;
+                Person(std::string n) : name(n) {}
+            };
+            Person person("Alice");
+            
+            // Inheritance and Polymorphism
+            class ChildClass : public ParentClass {
+            public:
+                void method() override {
+                    // code
+                }
+            };
+            ParentClass *obj = new ChildClass;
+            
+            // Interfaces (Abstract Classes)
+            class MyInterface {
+            public:
+                virtual void interfaceMethod() = 0;
+            };
+            class MyClass : public MyInterface {
+            public:
+                void interfaceMethod() override {
+                    // code
+                }
+            };
+            
+            // Exception Handling
+            try {
+                // code that may throw exception
+            } catch (ExceptionType &e) {
+                // handle exception
+            }            
+        </code></pre>       
+        <h2>Module 3 : Arrays and Strings</h2>
+        <pre><code class="language-cpp">
+            // Arrays
+            int numbers[] = {1, 2, 3, 4, 5};
+            int secondNumber = numbers[1];
+            
+            // Strings
+            std::string text = "Hello";
+            int length = text.length();
+            char charAt2 = text[2];
+            std::string sub = text.substr(1, 3);
+            std::string combined = "Hello" + " " + "World";            
+        </code></pre>       
+        <h2>Module 4 : File I/O</h2>
+        <pre><code class="language-cpp">
+            // Reading from File
+            #include <fstream>
+            std::ifstream file("file.txt");
+            std::string line;
+            while (std::getline(file, line)) {
+                std::cout << line << std::endl;
+            }
+            file.close();
+            
+            // Writing to File
+            #include <fstream>
+            std::ofstream outputFile("output.txt");
+            outputFile << "Hello, World!" << std::endl;
+            outputFile.close();            
+        </code></pre>      
+        </div>
+         
+    </div>
+    <footer>
+        <div class="footer-content">
+          <div class="company-info">
+            <h2>Codology</h2>
+            <p>Your Path to Programming Excellence</p>
+            <p>Get in touch</p>
+            <a href="mailto:shetyenupoor10@gmail.com">support@codology.com</a>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a  href="./java.html" >Java</a></li>
+              <li><a href="./python.html" >Python</a></li>
+              <li><a  href="./cpp.html" >C++</a></li>
+              <li><a  href="./javascript.html" >JavaScript</a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
